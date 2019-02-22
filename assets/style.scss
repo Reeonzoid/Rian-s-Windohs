@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+  };
+  
+body {
+    display: flex;
+    margin: 0;
+    background-image: url(https://cdn.glitch.com/6483a1c9-0ff1-4ecf-a4b3-aa24f42dcdf1%2Fgreen%20hills.jpg?1510243881505);
+    background-size: cover;
+    font-family: Tahoma, sans-serif;
+  };
+  
+ul {
+    list-style: none;
+    margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  };
+
+
+//Colors 
+
+$defaultBlue: rgb(0, 84, 227);
+
+@import 'main';
+@import 'startMenu';

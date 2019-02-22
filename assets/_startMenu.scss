@@ -1,0 +1,122 @@
+.menuWrapper {
+    display: inline-block;
+    height: 500px;
+    width: 450px;;
+    position: absolute;
+    top: -500px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 0 3px -3px  black;
+    z-index: 9;
+}
+
+.menuHeader {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: white linear-gradient(to bottom, rgb(0, 84, 227) 60%, rgba(0, 84, 227, 0.6) 100%);
+    padding-left: 10px;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid $defaultBlue;
+}
+
+.menuHeader__img {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.menuPrograms {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: calc(100% - 80px);
+    border: 1px solid $defaultBlue;
+}
+
+.menuLeft {
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid $defaultBlue;
+    overflow: hidden;
+}
+
+.menuRight {
+    height: 100%;
+    width: 50%;
+    background-color: #d3e7fb;
+}
+
+.itemList__item,
+.documentList__item  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 100%;
+    align-content: flex-start;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #316ac5;
+
+        >.itemList__text, .documentList__title {
+            color: white;
+        }
+    }
+}
+
+.itemList__icon {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    font-size: 40px;
+}
+
+.itemList__text,
+.documentList__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+.itemList__title {
+    width: calc(100% - 50px);
+}
+
+.itemList__sub {
+    display: flex;
+    width: calc(100% - 50px);
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.documentList__icon {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.documentList__title {
+    font-size: 12px;
+    color: #172a6c;
+    font-weight: bold;
+}
